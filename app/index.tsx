@@ -1,13 +1,17 @@
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 
 const home = () => {
   return (
     <View className="flex-1 item-center justify-center bg-white">
-      <Text>Hello World!</Text>
+      <Text>Login</Text>
+      <Link href={'/register'} asChild>
+        <Pressable>
+          <Text>Register</Text>
+        </Pressable>
+      </Link>
       <StatusBar style="auto" />
-      <Link href="/login">Login</Link>
     </View>
   );
 };
