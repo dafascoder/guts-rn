@@ -5,7 +5,7 @@ const StackLayout = () => {
     <Stack
       screenOptions={{
         headerStyle: {
-          backgroundColor: '#f4511e',
+          backgroundColor: '#000000',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
@@ -14,6 +14,7 @@ const StackLayout = () => {
       }}
     >
       <Stack.Screen name="index" options={{ headerTitle: 'Login', headerShown: false }} />
+      <Stack.Screen name="home" options={{ headerShown: false }} />
     </Stack>
   );
 };
